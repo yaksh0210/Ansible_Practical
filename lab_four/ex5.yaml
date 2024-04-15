@@ -1,0 +1,17 @@
+#Refer to the /home/bob/playbooks/inventory file. We would like to run the /home/bob/playbooks/playbook.yaml on all servers defined under web_nodes group.
+#
+#
+#Note: Use the group name in playbook as defined in the inventory file.
+
+
+
+---
+- name: 'Execute two commands on web_nodes'
+  hosts: 'web_nodes'
+  become: yes
+  tasks:
+    - name: 'Execute a date command'
+      command: date
+    - name: 'Task to display hosts file'
+      command: 'cat /etc/hosts'
+
