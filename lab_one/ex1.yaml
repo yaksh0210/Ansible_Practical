@@ -1,0 +1,6 @@
+#practical_one
+#There is a yaml file named practice.yaml under /home/bob/playbooks/ direc$
+#Add an additional key named property2 and value value2
+
+property1: value1
+property2: value2
