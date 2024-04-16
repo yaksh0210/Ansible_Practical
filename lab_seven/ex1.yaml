@@ -1,0 +1,13 @@
+#Update the playbook named playbook.yaml under /home/bob/playbooks directory with a task named Execute a script to run a script. The script is located at /tmp/install_script.sh on student-node.
+
+
+---
+- name: 'hosts'
+  hosts: all
+  become: yes
+  tasks:
+     - name : 'Execute a script' 
+       script: /tmp/install_script.sh
+
+
+
